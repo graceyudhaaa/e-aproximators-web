@@ -33,7 +33,7 @@ var e = function (itteration) {
 var showResult = function (n) {
     var n = parseInt(document.getElementById('n').value);
 
-    document.getElementById('showResult').innerHTML = e(n);
+    document.getElementById('showResult').innerHTML = e(n).toFixed(6);
 
     document.getElementById('hide').style.display = 'block';
 }
