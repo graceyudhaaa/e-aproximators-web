@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" 
+      type="image/png" 
+      href="icon.png">
+    <title>e aprroximators!</title>
+  </head>
+  <body>
+    
+    <!-- nav -->
+    <nav class="navbar navbar-dark bg-warning">
+        <div class="container">
+            <span class="navbar-brand m-auto h1">e aprroximators!</span>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+   
+    <div class="container my-5">    
+        <div class="row">
+            <div class="col-lg-6 m-auto">
+                <div class="card">
+                    <h5 class="card-header">Lets start!</h5>
+                    <div class="card-body">
+                        <h5 class="card-title">How many itteration do you want?</h5>
+                        <p class="card-text">The more itteration the better the approximation! <span style="color: rgb(167, 167, 167);">(try 1000)</span></p>
+                        <input id="n" class="form-control mb-3" type="text" >
+                        <input onclick="showResult()" class="btn btn-primary" type="submit" value="Submit">
+
+                        <!-- hidden -->
+                        <div id="hide" class="card mt-5 p-2 text-center">
+                            <h2 >The value of e is approximately</h2>
+                            <h1 id="showResult" >2.71</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- #explaination -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-lg-8 m-auto">
+                    <div id="accordion">
+                        <div class="card">
+                              <div class="card-header p-0" id="headingOne">
+                                <h5 class="mb-0 p-1">
+                                  <div class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <p class="accordionTitle m-0">How does it works?</p>
+                                  </div>
+                                </h5>
+                            </div>
+                          
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                  <p >The algorithm that use is that from 18th putnam 1958, the question on the original exam is to prove that is true. This is the original question</p>
+                                 
+                                  <h5 class="d-flex m-auto px-5 text-justify">"A sequence of numbers αi ∈ [0, 1] is chosen at random. Show that the expected value of n, where ∑1n αi > 1, ∑1n-1 αi ≤ 1 is e."</h5><br>
+
+                                  <p>You can read the mathematical solution <a href="https://mks.mff.cuni.cz/kalva/putnam/psoln/psol583.html" target="blank">here</a></p>
+
+                                  <p>We choose a random number beetwen 0 and 1 exclusive and another random number and add the sum, if the sum hasn't exceed 1, we continue to generate random number and sum it to the total until it exceed 1. if we do this in infinite amount of time and we count how many time we get into one and average it, the answer will be e.<br><br>
+
+                                 Because it generated from random number, the approximate value of e could be different although the number of itteration stay the same.
+                                    
+                                  My explaination might confuse you, fortunately Major Prep has a video explaining it, in fact, the inspiration for this web was from his video
+
+                                  </p>
+
+                                  <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/AAir4vcxRPU?start=368" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                           
+                          
+                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- #explaination end-->
+
+    <!-- Optional JavaScript -->
+    <script src="js/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+  </body>
+</html>

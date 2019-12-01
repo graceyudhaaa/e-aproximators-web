@@ -1,0 +1,45 @@
+/* other stuff */
+a:hover {
+    text-decoration: none;
+}
+
+/* iframe {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+} */
+/* end other stuff */
+
+/* changing font weight in the navbar */
+nav .container span {
+    font-weight: 700;
+    font-size: 2rem;
+}
+/* ok epic */
+
+/* js part */
+#hide {
+    display: none;
+}
+
+#showResult {
+    font-size: 6rem;
+    margin: 0;
+}
+/* js part */
+
+.accordionTitle {
+    font-weight: 500;
+    font-size: 1.25em;
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    
+}
